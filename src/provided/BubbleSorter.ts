@@ -1,4 +1,5 @@
 import ISorter from "../ISorter";
+import SorterFactory from "../SorterFactory";
 
 /**
  * BubbleSorter implements the ISorter interface using
@@ -24,3 +25,11 @@ export default class BubbleSorter<E> implements ISorter<E> {
         }
     }
 }
+
+// const sorterFactory = new SorterFactory();
+//
+// let sorter = sorterFactory.createSorter();
+// let list = ["z","a","n"];
+// sorter.sort(list, (s1: number, s2: number) => s1 - s2);
+//
+// console.log(list)
