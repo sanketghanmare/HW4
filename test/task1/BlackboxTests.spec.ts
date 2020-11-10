@@ -33,14 +33,14 @@ describe("blackbox tests for sorter", () => {
     it("call sorter on small array of chars", () => {
         let sorter = sorterFactory.createSorter();
         let list = ['a', 'z', 'x'];
-        sorter.sort(list, (s1: number, s2: number) => s1 - s2);
+        sorter.sort(list, (s1: any, s2: any) => s1 - s2);
         expect(list).to.have.ordered.members(['a', 'x', 'z']);
     });
 
     it("call sorter on small array of strings", () => {
         let sorter = sorterFactory.createSorter();
         let list = [ "Quiz", "Practice", "Gblogs", "Coding"];
-        sorter.sort(list, (s1: number, s2: number) => s1 - s2);
+        sorter.sort(list, (s1: any, s2: any) => s1 - s2);
         expect(list).to.have.ordered.members(["Coding", "Gblogs", "Practice", "Quize"]);
     });
 
@@ -65,7 +65,7 @@ describe("blackbox tests for sorter", () => {
             "Bald eagle",
             "frog",
             "rooster"];
-        sorter.sort(list, (s1: number, s2: number) => s1 - s2);
+        sorter.sort(list, (s1: any, s2: any) => s1 - s2);
         expect(list).to.have.ordered.members(["Alligator","Bald eagle" ,"bat", "camel" ,"cat" ,"Cheetah" ,
             "Colt", "cow", "Dog", "Dung beetle", "frog", "hamster", "horse", "mink", "moose", "porcupine", "rat", "rooster", "steer"]);
     });

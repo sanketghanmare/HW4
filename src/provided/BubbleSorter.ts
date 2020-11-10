@@ -26,10 +26,10 @@ export default class BubbleSorter<E> implements ISorter<E> {
     }
 }
 
-// const sorterFactory = new SorterFactory();
+// const sorterFactory = new SorterFactory("");
 //
 // let sorter = sorterFactory.createSorter();
-// let list = ["z","a","n"];
+// let list = [1,3,4,8,7];
 // sorter.sort(list, (s1: number, s2: number) => s1 - s2);
 //
 // console.log(list)
